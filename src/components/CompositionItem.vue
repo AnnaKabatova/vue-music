@@ -10,6 +10,7 @@
       </button>
       <button
         class="ml-1 py-1 px-2 text-sm rounded text-white bg-blue-600 float-right"
+        @click.prevent="showForm = true"
       >
         <i class="fa fa-pencil-alt"></i>
       </button>
