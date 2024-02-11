@@ -10,6 +10,7 @@
       <button
         type="button"
         class="z-50 h-24 w-24 text-3xl bg-white text-black rounded-full focus:outline-none"
+        @click.prevent="newSong(song)"
       >
         <i class="fas fa-play"></i>
       </button>
@@ -87,8 +88,9 @@
 
 <script>
 import { songsCollection, auth, commentsCollection } from '@/includes/firebase.js'
-import { mapState } from 'pinia'
+import { mapState, mapActions } from 'pinia'
 import useUserStore from '@/stores/user.js'
+import usePlayerStore from '@/stores/player.js'
 
 export default {
   name: 'SongView',
@@ -118,6 +120,7 @@ export default {
     },
   },
   methods: {
+    ...mapActions(usePlayerStore, ["newSong"]),
     async addComment(values, { resetForm }) {
       this.comment_in_submission = true;
       this.comment_show_alert = true;
