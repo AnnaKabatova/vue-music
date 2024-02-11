@@ -25,7 +25,7 @@
     </div>
   </section>
   <!-- Form -->
-  <section class="container mx-auto mt-6">
+  <section class="container mx-auto mt-6" id="comments">
     <div
       class="bg-white rounded border border-gray-200 relative flex flex-col"
     >
