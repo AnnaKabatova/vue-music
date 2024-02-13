@@ -72,6 +72,12 @@ export default defineStore("player", {
       }
 
       return false;
+    },
+    starting: (state) => {
+      if (state.seek === "00:00" && state.playerProgress === "0%") {
+        return true;
+      }
+      return false;
     }
   },
 });

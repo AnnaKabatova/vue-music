@@ -11,7 +11,7 @@
         <button
           type="button"
           class="z-50 h-24 w-24 text-3xl bg-white text-black rounded-full focus:outline-none"
-          @click.prevent="newSong(song)"
+          @click.prevent="(!playing && starting) ? newSong(song) : toggleAudio()"
         >
           <i
             class="fas"
@@ -118,7 +118,7 @@ export default {
   },
   computed: {
     ...mapState(useUserStore, ["userLoggedIn"]),
-    ...mapState(usePlayerStore, ["playing"]),
+    ...mapState(usePlayerStore, ["playing", "starting"]),
     sortedComments() {
       return this.comments.slice().sort((a, b) => {
         if (this.sort === '1') {
@@ -129,7 +129,7 @@ export default {
     },
   },
   methods: {
-    ...mapActions(usePlayerStore, ["newSong"]),
+    ...mapActions(usePlayerStore, ["newSong", "toggleAudio",]),
     async addComment(values, { resetForm }) {
       this.comment_in_submission = true;
       this.comment_show_alert = true;
