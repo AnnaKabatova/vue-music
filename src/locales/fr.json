@@ -9,6 +9,12 @@
     "accept": "J'accepte Music's {0}",
     "tos": "Conditions d'utilisation"
   },
+  "header": {
+    "about": "À propos",
+    "manage": "Gérez",
+    "logout": "Se déconnecter",
+    "login": "S'identifier/S'enregistrer"
+  },
   "manage": {
     "my_songs": "Mes chansons",
     "unsaved_changes": "Vous avez des changements non enregistrés. Êtes-vous sûr de vouloir quitter?"

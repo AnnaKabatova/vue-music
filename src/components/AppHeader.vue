@@ -19,11 +19,11 @@
               class="px-2 text-white"
               :to="{ name: 'about' }"
             >
-              About
+              {{ $t("header.about") }}
             </router-link>
           </li>
           <li v-if="!userStore.userLoggedIn">
-            <a class="px-2 text-white" href="#" @click.prevent="toggleAuthModal">Login / Register</a>
+            <a class="px-2 text-white" href="#" @click.prevent="toggleAuthModal">{{ $t("header.login") }}</a>
           </li>
           <template v-else>
             <li>
@@ -31,11 +31,11 @@
                 class="px-2 text-white"
                 :to="{ name: 'manage' }"
               >
-                Manage
+                {{ $t("header.manage") }}
               </router-link>
             </li>
             <li>
-              <a class="px-2 text-white" href="#" @click.prevent="signOut">Logout</a>
+              <a class="px-2 text-white" href="#" @click.prevent="signOut">{{ $t("header.logout") }}</a>
             </li>
           </template>
         </ul>
