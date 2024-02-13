@@ -79,7 +79,7 @@ export default {
     },
   },
   beforeRouteLeave(to, from, next) {
-    if (!this.updateUnsavedFlag) {
+    if (!this.unsavedFlag) {
       next();
     } else {
       // eslint-disable-next-line no-alert, no-restricted-globals
