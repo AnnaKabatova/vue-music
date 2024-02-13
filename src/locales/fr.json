@@ -1,5 +1,16 @@
 {
   "home": {
     "listen": "Écoutez de la bonne musique!"
+  },
+  "song": {
+    "comment_count": "Pas de commentaires | 1 commentaire | {count} commentaires"
+  },
+  "register": {
+    "accept": "J'accepte Music's {0}",
+    "tos": "Conditions d'utilisation"
+  },
+  "manage": {
+    "my_songs": "Mes chansons",
+    "unsaved_changes": "Vous avez des changements non enregistrés. Êtes-vous sûr de vouloir quitter?"
   }
 }
