@@ -17,6 +17,7 @@
     "@vee-validate/rules": "^4.12.5",
     "firebase": "^8.10.1",
     "howler": "^2.2.4",
+    "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.15",
     "vue-i18n": "^9.9.1",
