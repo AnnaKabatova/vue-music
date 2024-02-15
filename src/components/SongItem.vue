@@ -1,7 +1,9 @@
 <template>
   <li
     class="flex justify-between items-center p-3 pl-6 cursor-pointer transition
-    duration-300 hover:bg-gray-50"
+    duration-300 hover:bg-gray-50 example"
+    :id="`song-id-${song.docId}`"
+    :class="`song-id-${song.docId}`"
   >
     <div>
       <router-link
